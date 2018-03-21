@@ -1,0 +1,313 @@
+/*Universal Styles*/
+html {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 730px) {
+  .container {
+    width: 100%;
+  }
+}
+ h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: .5rem;
+  line-height: 1;
+  color: hsla(0, 0%, 0%, 0.65);
+}
+ h3 {
+  margin: 2rem .5rem 2rem .5rem;
+  line-height: 1.5;
+  font-weight: 800;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+a {
+  font-size: .9rem;
+  color: hsla(208, 57%, 46%, 0.88);
+  margin-top: 1rem;
+  display: block;
+}
+.gray-bg {
+  background-color: hsla(0, 0%, 0%, 0.12);
+}
+.test {
+  border: 2px solid red;
+}
+/*Header section*/
+
+header {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div {
+  margin-left: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div img {
+  width: 2.5rem;
+}
+header .colmar {
+  font-size: 2rem;
+  font-weight: bold;
+}
+header .academy {
+  font-size: 2rem;
+  font-weight: 50;
+  opacity: .8;
+}
+header nav {
+  margin-right: 1.8rem;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav li {
+  margin-left: 1rem;
+}
+header nav .mobile {
+  display: none;
+}
+@media only screen and (max-width: 730px) {
+  header {
+    justify-content: center;
+    width: 100%;
+  }
+  header div {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav .desktop {
+    display: none;
+  }
+  header nav ul.mobile {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  header nav .mobile li {
+    width: 2rem;
+    height: 2rem;
+  }
+  header nav .mobile img {
+    width: 100%;
+  }
+}
+
+
+
+/*Banner Section*/
+
+#banner {
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.12);
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  font-family: Verdana;
+}
+#banner img {
+  max-width: 60%;
+  margin-right: 1.5rem;
+}
+#banner .title {
+  width: 35%;
+}
+#banner div h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: .5rem;
+  line-height: 1;
+  color: hsla(0, 0%, 0%, 0.65);
+}
+#banner div h3 {
+  margin: 2rem .5rem 2rem .5rem;
+  line-height: 1.5;
+}
+#banner .button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .7rem 0;
+  background-color: hsla(0, 0%, 0%, 0.35);
+  color: white;
+  font-size: 1rem;
+  height: 2rem;
+  font-weight: 900;
+}
+@media only screen and (max-width: 730px) {
+  #banner {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #banner img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #banner .title {
+    width: auto;
+    margin: 2rem 1rem 0 1rem;
+  }
+  #banner .button {
+    margin: 0;
+    width: auto;
+  }
+}
+
+
+/*Practice Section*/
+#practice.desktop {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem 1.5rem;
+}
+#practice.desktop .sup-left {
+  max-width: 60%;
+  margin-right: 1.5rem;
+}
+#practice.desktop .sup-left img {
+  width: 100%;
+}
+#practice.desktop .sup-left h1 {
+  margin: 1rem 0;
+}
+#practice.desktop .sup-left p {
+  margin: 1.5rem 0;
+  line-height: 1.5;
+  color: hsla(0, 0%, 0%, 0.71);
+}
+#practice.desktop .sup-right {
+  max-width: 40%;
+  border-left: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+#practice.desktop .sup-right ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+#practice.desktop .sup-right li {
+  display: flex;
+  padding: .5rem;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+#practice.desktop .sup-right li img {
+  max-width: 35%;
+  height: auto;
+
+}
+#practice.desktop .sup-right li div {
+
+  text-align: left;
+  width: 65%;
+  margin-left: 1rem;
+
+}
+#practice.desktop .sup-right li div span {
+  font-size: .8rem;
+  margin-top: 8px;
+}
+#practice.desktop .sup-right li div h3 {
+  font-size: 1.3rem;
+  margin:0;
+}
+#practice.desktop .sup-right li div a {
+  max-width: 22rem;
+  margin-top: 8px;
+}
+#practice .sup-right li:nth-child(2n+3) {
+  background-color: hsla(0, 0%, 0%, 0.05);
+}
+#practice.mobile {
+  display: none;
+}
+@media only screen and (max-width: 730px) {
+  #practice.desktop {
+    display: none;
+  }
+  #practice.mobile {
+    display: block;
+  }
+  #practice.mobile div {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  #practice.mobile div img {
+    padding: 1rem;
+    max-height: 10rem;
+  }
+  #practice h3, #practice span, #practice a {
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+
+
+/*Learning Section*/
+.title {
+  text-align: center;
+  padding: 2rem;
+}
+#learning {
+  padding: 0 4rem 2rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+#learning div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: auto;
+  background-color: white;
+}
+#learning div img {
+  max-width: 100%
+}
+#learning div h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+#learning div h2, #learning div p {
+  margin-left: 1rem;
+  font-weight: lighter;
+  margin-top: 8px;
+}
+#learning div p {
+  margin-bottom: 24px;
+}
+#learning div:nth-child(3n+2) {
+  margin: 0 2rem;
+}
+#learning div:nth-child(1n+4) {
+  margin-top: 2rem;
+}
